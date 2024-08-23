@@ -123,10 +123,10 @@ appears novel.
   is not sufficiently reliable to act in a safety or censorship role.
 
 ## Citations
-- https://arxiv.org/abs/2303.15343
-- https://arxiv.org/abs/2310.14918
-- https://arxiv.org/abs/2405.15682
-- https://arxiv.org/abs/2405.20768 (Inspiration only.)
+- https://arxiv.org/abs/2303.15343 - Zhai et. al. Sigmoid Loss for Language Image Pre-Training.
+- https://arxiv.org/abs/2310.14918 - Agnolucci et. al. ARNIQA: Learning Distortion Manifold for Image Quality Assessment.
+- https://arxiv.org/abs/2405.15682 - Defazio et. al. The Road Less Scheduled.
+- https://arxiv.org/abs/2405.20768 - Huang. Expanded Gating Ranges Improve Activation Functions.
 
 ## License and Attribution
 Model source code and weights are released under the terms of the Mozilla Public License v2.0. This
