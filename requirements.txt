@@ -1,0 +1,4 @@
+numpy
+pillow
+timm
+torch
