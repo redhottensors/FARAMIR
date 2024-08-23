@@ -103,6 +103,17 @@ rate around ``4e-4``.
 Unfreezing other portions of the head or the attention pool will most likely result in a rapid and
 catastrophic decline in validation performance.
 
+### What are AdaptiveSigmoid and ChannelNorm? Where can I find the papers?
+``AdaptiveSigmoid`` is a parameterized drop-in replacement for SiLU activation that @RedHotTensors
+has been developing. Its use results in a small but noticible improvment in model performance which
+exceeds that of an equivilent number of linear parameters.
+
+``ChannelNorm`` reduces initial loss by normalizing the features of the component models to the
+same scale. It also acts to forestall collapse of the SigLIP backbone.
+
+It's not entirely impossible that a paper may be produced on AdapativeSigmoid at some point. It
+appears novel.
+
 ## Additional Notes
 - The assessment confidence may be useful as an aesthetic gradient.
 - The output of the gated classifier heads can be examined for a more detailed breakdown of the
