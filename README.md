@@ -80,10 +80,10 @@ implementations of some simple components of these models for compatibility purp
 - [https://github.com/discus0434/aesthetic-predictor-v2-5] (aesthetic prediction, AGPL v3)
 
 Most of the weights of FARARMIR consist of a finetuned attention pooling module for SigLIP. The
-addition of other models resulted in a small but noticeable improvement in validation performance.
+addition of other models resulted in a moderately small improvement in validation performance.
 
 ## Dataset
-FARAMIR was trained on a hand-labelled and carefully-reviewed dataset of 6,500 publicly-available
+FARAMIR was trained on a hand-labeled and carefully-reviewed dataset of 6,500 publicly-available
 images organized into approximately 70 classes. Validation was performed against an additional set
 of approximately 1,400 images. Final validation performance was an MCC of 0.78 and a CTI of 0.70.
 Additional human review indicates that this performance is representative and that overall
@@ -105,8 +105,8 @@ catastrophic decline in validation performance.
 
 ### What are AdaptiveSigmoid and ChannelNorm? Where can I find the papers?
 ``AdaptiveSigmoid`` is a parameterized drop-in replacement for SiLU activation that @RedHotTensors
-has been developing. Its use results in a small but noticible improvment in model performance which
-exceeds that of an equivilent number of linear parameters.
+has been developing. Its use results in a small but consistent improvement in model performance which
+exceeds that of an equivalent number of linear parameters.
 
 ``ChannelNorm`` reduces initial loss by normalizing the features of the component models to the
 same scale. It also acts to forestall collapse of the SigLIP backbone.
