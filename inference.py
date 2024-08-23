@@ -72,11 +72,11 @@ def main():
     torch.backends.cudnn.allow_tf32 = True
     torch.backends.cudnn.benchmark = True
 
-    parser = argparse.ArgumentParser(description="Classify with the FARAMIR model.")
-    parser.add_argument("path", type=str, help="Path to directory or an image file.")
+    parser = argparse.ArgumentParser(description="Assess images with FARAMIR.")
+    parser.add_argument("path", type=str, help="Directory of image files to classify, or a path to a single image file.")
     parser.add_argument("-b", "--batch_size", type=int, default=64, help="Batch size for inference.")
-    parser.add_argument("-l", "--file_list", type=str, help="Use the specified list of files relative to the specified path.")
-    parser.add_argument("-m", "--model", type=str, default="faramir-v1.pth", help="Path to the model checkpoint.")
+    parser.add_argument("-l", "--file_list", type=str, help="Use the specified list of files relative to path, instead of enumerating all files.")
+    parser.add_argument("-m", "--model", type=str, default="faramir-v1.pth", help="Path to the FARAMIR checkpoint.")
     parser.add_argument("-d", "--device", type=str, default="cuda", help="PyTorch inference device.")
     parser.add_argument("-c", "--compile_mode", type=str, default="auto", help="Compilation mode for PyTorch, or 'off' or 'auto'.")
     parser.add_argument("-t", "--threshold", type=float, default=0.5, help="Confidence threshold for acceptance.")
@@ -103,7 +103,7 @@ def main():
     if args.device == "cpu":
         args.compile_mode = "off"
     elif args.compile_mode == "auto":
-        args.compile_mode = "max-autotune" if len(dataset) > 256 else "off"
+        args.compile_mode = "max-autotune" if (len(dataset) / args.batch_size) >= 64 else "off"
 
     compiled_model = None
     if args.compile_mode != "off":
