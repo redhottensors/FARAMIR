@@ -75,9 +75,9 @@ The following component models will be automatically downloaded from Hugging Fac
 weights are not distributed by this repository. This repository contains minimal PyTorch
 implementations of some simple components of these models for compatibility purposes only.
 
-- [https://huggingface.co/timm/ViT-SO400M-14-SigLIP-384] (primary backbone, Apache-2.0)
-- [https://github.com/miccunifi/ARNIQA] (image quality assessment, CC-BY-NC-4.0)
-- [https://github.com/discus0434/aesthetic-predictor-v2-5] (aesthetic prediction, AGPL v3)
+- https://huggingface.co/timm/ViT-SO400M-14-SigLIP-384 (primary backbone, Apache-2.0)
+- https://github.com/miccunifi/ARNIQA (image quality assessment, CC-BY-NC-4.0)
+- https://github.com/discus0434/aesthetic-predictor-v2-5 (aesthetic prediction, AGPL v3)
 
 Most of the weights of FARARMIR consist of a finetuned attention pooling module for SigLIP. The
 addition of other models resulted in a moderately small improvement in validation performance.
@@ -123,10 +123,10 @@ appears novel.
   is not sufficiently reliable to act in a safety or censorship role.
 
 ## Citations
-- [https://arxiv.org/abs/2303.15343]
-- [https://arxiv.org/abs/2310.14918]
-- [https://arxiv.org/abs/2405.15682]
-- [https://arxiv.org/abs/2405.20768] (Inspiration only.)
+- https://arxiv.org/abs/2303.15343
+- https://arxiv.org/abs/2310.14918
+- https://arxiv.org/abs/2405.15682
+- https://arxiv.org/abs/2405.20768 (Inspiration only.)
 
 ## License and Attribution
 Model source code and weights are released under the terms of the Mozilla Public License v2.0. This
