@@ -67,7 +67,7 @@ distributed weights are compatible with ``torch.load(weights_only=True)``.
 30. ``technology`` -- Prominent science fiction theming, or real-world technological objects such
    as vehicles and industrial weaponry. (Reject)
 31. ``ui`` -- Software user interface or screen capture. (Reject)
-32. ``degrated`` -- Excessive image degradation, such as from lossy compression, focus issues, or
+32. ``degraded`` -- Excessive image degradation, such as from lossy compression, focus issues, or
    extreme motion blur. (Reject)
 
 ## Component Models
