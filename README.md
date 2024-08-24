@@ -55,7 +55,7 @@ distributed weights are compatible with ``torch.load(weights_only=True)``.
 22. ``multi_img`` -- A collage of distinct images, which in some cases may be superimposed over
    another primary image.  (Reject)
 23. ``3d_cute`` -- A childlike or highly "cute"-styled realistic 3D model or scene. (Reject)
-24. ``3d_no_fur`` -- A reasonable-quality 3d model of an normally-furred animal that is lacking
+24. ``3d_no_fur`` -- A reasonable-quality 3d model of an normally-furred creature that is lacking
    fur. (Reject)
 25. ``3d_miniature`` -- A 3D miniature model, generally with low detail or with the characteristic
    exaggerated faux detailing. (Reject)
